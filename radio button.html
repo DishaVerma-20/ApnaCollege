@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button</title>
+</head>
+<body>
+    <form action="/server">
+        <div>
+            <input type="radio" id="apple" name="fruit" value="apple">
+            <label for="apple">Apple</label>
+        </div>
+        <div>
+            <input type="radio" id="mango" name="fruit" value="mango">
+            <label for="mango">Mango</label>
+        </div>
+        <div>
+            <input type="radio" id="orange" name="fruit" value="orange">
+            <label for="orange">Orange</label>
+        </div>
+        
+        <!-- yaha hamne name ki value sabme same rakhi hai, i.e, 
+        fruit iska matlab hai hamne ek group bana liya hai, toh ab  srf ek he option ham log choose kar sakte haii,
+        kyuki fruit ki value toh koi ek he hogi
+        value attribute hamara batata hai ki hmne kya select kara haiii
+        
+        
+        name = value ke format mai URL mai chije display hoti haiii-->
+        <hr>
+        <div>
+            <p>Choose your subjects:-</p>
+            <input type="checkbox" id="maths" name="sub" value="maths">
+            <label for="maths">Mathematics</label>
+            <input type="checkbox" id="science" name="sub" value="sci">
+            <label for="science">Science</label>
+            <input type="checkbox" id="GK" name="sub" value="Gk">
+            <label for="GK">General Knowledge</label>
+            <input type="checkbox" id="CS" name="sub" value="CS">
+            <label for="CS">Computer Science</label>
+        </div>
+        <hr>
+        <div>
+            <select name="profession" id="profession">
+                <option>Select your profession:-</option>
+                <option value="stu">Student</option>
+                <option value="dev">Developer</option>
+                <!-- <option value="teacher" selected>Teacher</option> -->
+                <!-- agar hum chahte hai ki koi opt by default selected aaye toh we can use "selected" attribute -->
+            </select>
+        </div>
+        <hr>
+        <div>
+            <label for="vol">Select volume</label>
+            <input type="range" id="vol" name="volume" min="0" max="100" step="10" value="50">
+            <!-- 10 ke steps mai volume increase hogi yaha pr 
+             by default koi value aaye-->
+        </div>
+        <hr>
+        <div>
+            <label for="fb">Write your valuable feedback here.</label>
+            <textarea name="feedback" id="fb" rows="5" cols="200" placeholder="Feedback here!"></textarea>
+            <!-- by default 2 rows 10 columns -->
+     
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

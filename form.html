@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <button>Form ke bahar</button>
+    <form action="/action">
+        <!-- form is used to collect the data from users or peoples.
+        action attribute tells data collect hone ke baad uske saath kya hoga
+        input type :- ki hame user se kis type ka input lena haiii..
+        placeholder:- iske andar jo actual value hoti haii, uske pehle jo text dikhta hai vo likhte haii -->
+        
+        <hr>
+        <br>
+        yeh khali input hamne use kara haii, no type used yeh bhi text ki trh he kaam krega
+        <input>
+        <hr>
+        <br>
+        <label>
+            <p>yaha input type text haiii</p>
+            <input type="text" placeholder="Enter username">
+        </label>
+
+        <hr><br>
+
+        Label classical approach:- 
+        <label for="user">Enter your username:-</label>
+        <input type="text" id="user" placeholder="Enter username">
+        
+        <hr><br>
+        <p>yaha input type password haii</p>
+        <input type="password">
+        <hr><br>
+        <p>yaha input type color hai, toh color picker aa jayga yaha prr</p>
+        <input type="color">
+        <hr><br>
+        <p>yaha input type time hoga</p>
+        <input type="time">
+        <hr><br>
+        <p>yaha input type number hoga</p>
+        <input type="number">
+
+        <button>Submit by default action attribute vala kaam perform krega..</button>
+        <p>butto ke bhi kuch types hote haii.. submit button reset</p>
+        
+        <label for="1">Button type is submit here</label>
+        <button id="1" type="submit">Submit</button>
+
+        <hr>
+        <label for="2">Button type is button here.. do something</label>
+        <button id="2" type="button">Do something</button>
+
+        <hr>
+        <label for="3">yeh button sab kuch reset kr dega</label>
+        <button id="3" type="reset">Reset</button>
+
+
+        Button using input, not advisable
+        <input type="button" value="Click me">
+        <input type="Submit"> By default Submit likha hoga
+        <input type="Submit" value="Click me button 2">
+    </form>
+    
+</body>
+</html>
